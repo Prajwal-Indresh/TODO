@@ -1,4 +1,4 @@
-### To Do List Application ####
+#### To Do List Application ####
 
 ### Overview ###
 Front end ToDo List app is developed using react and backend is developed using spring boot.The application will allow a user to create new tasks, assign them a title and due date. Once the user is using the application, he/she should be able to also edit, mark as done or remove tasks. They can also quit and save the current task list to file, and then restart the application with the former state restored.
