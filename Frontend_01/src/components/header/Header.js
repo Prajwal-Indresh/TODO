@@ -8,9 +8,7 @@ function Header({isAuthenticated, setIsAuthenticated}) {
         <div className="navbar-brand container">Let's get the work done</div>
         <ul className="navbar-nav justify-content-end container">
                     
-                    <li className="nav-link px-4"><Link to='/'>Home</Link></li>
-
-
+          <li className="nav-link px-4"><Link to='/'>Home</Link></li>
           {isAuthenticated && <li className="nav-link px-4"><Link to='/add'>Add Todo</Link></li>}
           {isAuthenticated && <li className="nav-link px-4"><Link to='/todo'>View Todo List</Link></li>}
           {!isAuthenticated && <li className="nav-link px-4"><Link to='/signin'>Signin</Link></li>}

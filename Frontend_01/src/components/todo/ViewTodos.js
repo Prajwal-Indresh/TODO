@@ -127,6 +127,8 @@ function Todos({isAuthenticated, setIsAuthenticated}) {
 			<th>Mark Done</th>
             <th>Task</th>
             <th>Target Date</th>
+			<th>Update</th>
+			<th>Delete</th>
          
           </tr>
         </thead>

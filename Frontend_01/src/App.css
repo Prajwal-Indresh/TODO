@@ -8,6 +8,20 @@ tr.completed {
   background-color: black;
 } */
 
+form{
+  padding-left: 350px;
+  padding-top: 150px;
+  padding-right: 250px;
+}
+
+.form-control{
+  width: 75%;;
+}
+form h1{
+  padding-left: 130px;
+
+}
+
 a {
   color: rgb(247, 251, 255);
   text-decoration: none;
