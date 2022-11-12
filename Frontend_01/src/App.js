@@ -9,8 +9,7 @@ import UpdateTodo from './components/todo/UpdateTodo';
 import Signin from './components/auth/Signin';
 import Signup from './components/auth/Signup';
 import Signout from './components/auth/Signout';
-import Landing from './components/page/Landing';
-import NotFound from './components/page/NotFound';
+ import Landing from './components/page/Landing';
 
 import './bootstrap.min.css';
 import './App.css';
@@ -39,7 +38,6 @@ function App () {
           <Route exact path="/add" render={(props) => (<AddTodo {...props} isAuthenticated={isAuthenticated} setIsAuthenticated={setIsAuthenticated} />)} />
           <Route exact path="/update/:id" render={(props) => (<UpdateTodo {...props} isAuthenticated={isAuthenticated} setIsAuthenticated={setIsAuthenticated} />)} />
           <Route exact path="/about" component={About} />
-          <Route component={NotFound} />
         </Switch>
       </div>
     </div>

@@ -8,7 +8,7 @@ function Todos({isAuthenticated, setIsAuthenticated}) {
 	const [todos, setTodos] = useState([]);
 	const [changed, setChanged] = useState(false);
 	const [errorMessage, setErrorMessage] = useState('');
-	const [pageNumber, setPageNumber] = useState(1);
+    const [pageNumber, setPageNumber] = useState(1);
 	const [pageSize, setPageSize] = useState(20);
 
 	const [filter, setFilter] = useState("All");
@@ -145,6 +145,7 @@ function Todos({isAuthenticated, setIsAuthenticated}) {
             </tr>
           })
         }
+		
 		<button onclick="topFunction()" id="topBtn" title="Go to top">Go to Top</button>
 		
 		

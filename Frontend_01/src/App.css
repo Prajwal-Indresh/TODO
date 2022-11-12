@@ -4,7 +4,7 @@ tr.completed {
 }
 
 /* tr:hover{
-  color: blueviolet;
+  color: rgb(239, 236, 242);
   background-color: black;
 } */
 
@@ -47,7 +47,7 @@ a:hover {
  }
 
  .topBtn {
-  display: none;
+  /* display: none; */
   position: fixed;
   bottom: 20px;
   right: 30px;
@@ -63,7 +63,7 @@ a:hover {
 }
 
 .topBtn:hover {
-  background-color: #555;
+  background-color: rgb(11, 4, 4);
 }
 
 

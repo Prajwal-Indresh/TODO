@@ -6,11 +6,11 @@ export default function About() {
 			<h1>About</h1>
 			<p>This is todo list app version 1.0.0</p>
 		
-		 
-		<p>Hi! We are the team behind the todo list website.
-			We created this website to help people keep track of their to-do lists and get things done!
-		   we love to lead people to more productive and organized lives.</p>
-		   
+		   <pre>
+			<h4>Hi! We are the team behind the todo list website.{"\n"}
+			We created this website to help people keep track of their to-do lists and get things done!{"\n"}
+		   we love to lead people to more productive and organized lives.</h4>
+		   </pre>
 
 		</div>
 	)

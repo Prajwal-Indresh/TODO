@@ -69,5 +69,7 @@ export default function Landing({isAuthenticated, setIsAuthenticated}) {
 			<h1>Todo List Application</h1>
       
 		</div>
+
+    
 	)
 }
