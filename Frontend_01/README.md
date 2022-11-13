@@ -34,8 +34,3 @@ Front end ToDo List app is developed using react and backend is developed using 
 3. Support the ability to add, edit, mark as done, and remove tasks
 
 4. we can view todos in Categories, all todos, completed and not completed.
-
-
-### Snapshot of Application
-
-![ToDoList App]()
