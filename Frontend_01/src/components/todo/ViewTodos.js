@@ -15,7 +15,6 @@ function Todos({isAuthenticated, setIsAuthenticated}) {
 	let history = useHistory();
 
 
-	
 
 	useEffect(() => {
 		if(!isAuthenticated){
@@ -148,7 +147,7 @@ function Todos({isAuthenticated, setIsAuthenticated}) {
           })
         }
 		
-		<button onclick="topFunction()" id="topBtn" title="Go to top">Go to Top</button>
+		{/* <button onclick="topFunction()" id="topBtn" title="Go to top">Go to Top</button> */}
 		
 		
         </tbody>
@@ -156,5 +155,34 @@ function Todos({isAuthenticated, setIsAuthenticated}) {
     </div>
 	);
 }
+
+// function isOverdue(item) {
+// 	return !item.complete && item.timestampDue < new Date().getTime();
+  
+//   const itemClass = `list-group-item list-group-item-${isOverdue(item) ? "danger" : "info"}`;
+// return (
+// <li className={itemClass}>
+// ...
+// </li>);
+
+// }
+
+
+
+// function Item({ item, completeItem }) {
+// 	const itemClass = `list-group-item list-group-item-${isOverdue(item) ? "danger" : "info"}`;
+// 	return (
+// 	  <li className={itemClass}>
+// 		<div className="item">
+// 		  <span className={`item-title${item.complete ? " complete-item" : ""}`}>
+// 			{`${item.name} - ${dateformat(new Date(item.timestampDue), "dd-mmm-yyyy")}`}
+// 		  </span>
+// 		  {!item.complete && (
+// 			<button type="button" className="btn btn-link" onClick={completeItem}>
+// 			  Complete item
+// 			</button>)}
+// 		</div>
+// 	  </li>);
+//   }
 
 export default Todos;

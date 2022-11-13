@@ -66,7 +66,7 @@ function AddTodo({isAuthenticated, setIsAuthenticated}) {
 	return (
 		<div className="container">
       <form onSubmit={onSubmit}>
-        <h1>Add New Todo</h1>
+        <h1>Add Todo</h1>
         <div className="form-group">
           <label>Title</label>
           <input 
