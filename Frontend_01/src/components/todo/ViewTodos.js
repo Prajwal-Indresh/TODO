@@ -137,11 +137,18 @@ function Todos({isAuthenticated, setIsAuthenticated}) {
 
             return <tr className={todo.isCompleted? 'completed' : ''} key={todo.id}>
 			  <td><button className="btnM " onClick={() => markCompleted(todo.id)}></button></td>
-              <td>{todo.title}</td>
-              <td>{moment(todo.targetDate).format('ll')}</td>            
-				
+			  
+				<td style={todo.isCompleted?{textDecorationLine:'line-through'}:null || 
+					moment().isAfter(moment(todo.targetDate)) ? {color:'red'} :null
+				}>
+				{todo.title}
+			   </td>
+
+              <td>{moment(todo.targetDate).format('ll')}</td>  
+			         
 				<td><Link to={{pathname: `/update/${todo.id}`}}><button className="btn">Edit📝</button></Link></td>
 				<td><button className ="btnX btnX-danger" onClick={() => deleteTodo(todo.id)}>❌</button></td>
+
 														
             </tr>
           })
