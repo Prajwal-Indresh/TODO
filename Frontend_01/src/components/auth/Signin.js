@@ -68,11 +68,11 @@ function Signin({isAuthenticated, setIsAuthenticated}) {
       <form onSubmit={onSubmit}>
         <h1>Sign In</h1>
         <div className="form-group">
-          <label>Username</label>
+          <label>User email</label>
           <input 
             value={username} 
             onChange={e => setUsername(e.target.value)} 
-            placeholder="Username"
+            placeholder="User email"
             className="form-control">
           </input>
         </div>

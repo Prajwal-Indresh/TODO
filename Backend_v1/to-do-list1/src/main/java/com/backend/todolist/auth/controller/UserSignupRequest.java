@@ -2,9 +2,14 @@ package com.backend.todolist.auth.controller;
 
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
+import javax.validation.constraints.Email;
+
+
 
 public class UserSignupRequest {
-	@NotEmpty(message = "Username is required")
+	@NotEmpty(message = "User email is required")
+	@Email(regexp = "[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,3}")
+
     private String username;
     
     @NotEmpty(message = "Password is required")
