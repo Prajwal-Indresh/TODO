@@ -8,7 +8,7 @@ import javax.validation.constraints.Email;
 
 public class UserSignupRequest {
 	@NotEmpty(message = "User email is required")
-	@Email(regexp = "[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,3}")
+	@Email(regexp = "[a-z0-9]+@[a-z]+\\.[a-z]{2,3}")
 
     private String username;
     

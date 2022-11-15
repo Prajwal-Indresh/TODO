@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function Header({isAuthenticated, setIsAuthenticated}) {
 	return (
 		<header>
-			<nav className="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+			<nav className="navbar navbar-expand-md navbar-dark bg-secondary sticky-top">
         <div className="navbar-brand container">Let's get the work done</div>
         <ul className="navbar-nav justify-content-end container">
                     

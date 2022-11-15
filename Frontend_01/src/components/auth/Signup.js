@@ -76,6 +76,8 @@ function Signup({isAuthenticated, setIsAuthenticated}) {
             className="form-control">
           </input>
         </div>
+
+        
         <div className="form-group">
           <label>Password</label>
           <input 

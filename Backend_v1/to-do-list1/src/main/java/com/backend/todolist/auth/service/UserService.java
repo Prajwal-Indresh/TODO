@@ -48,7 +48,7 @@ public class UserService {
 	        
 			return new UserSignupResponse(username, token);
 		} catch (AuthenticationException e) {
-            throw new BadCredentialsException("Invalid username/password");
+            throw new BadCredentialsException("Invalid user email/password");
         }
 	}
 	
@@ -60,7 +60,7 @@ public class UserService {
 	        
 			return new UserSigninResponse(username, token);
 		} catch (AuthenticationException e) {
-            throw new BadCredentialsException("Invalid username/password");
+            throw new BadCredentialsException("Invalid user email/password");
         }
 	}
 }
